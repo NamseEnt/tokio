@@ -456,11 +456,9 @@ compile_error! {
     not(tokio_unstable),
     target_family = "wasm",
     any(
-        feature = "fs",
         feature = "io-std",
         feature = "net",
         feature = "process",
-        feature = "rt-multi-thread",
         feature = "signal"
     )
 ))]
