@@ -394,6 +394,7 @@ impl OpenOptions {
     }
 
     /// Returns a mutable reference to the underlying `std::fs::OpenOptions`
+    #[allow(dead_code)]
     pub(super) fn as_inner_mut(&mut self) -> &mut StdOpenOptions {
         &mut self.0
     }
